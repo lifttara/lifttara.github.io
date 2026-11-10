@@ -86,7 +86,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 760px) { .menu a:not(.btn) { display: none; } }
 
 /* ---------- Úvod na celú obrazovku ---------- */
-.hero-section { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; isolation: isolate; padding: 120px 0 56px; }
+.hero-section { position: relative; min-height: 100svh; display: flex; align-items: flex-end; color: #fff; overflow: hidden; isolation: isolate; padding: 150px 0 56px; }
 .hero-bg { position: absolute; inset: -8% 0; z-index: -2; background: #111 url(../icons/hero.jpg) 50% 40% / cover no-repeat; translate: 0 var(--py, 0px); animation: photo-in 1.4s var(--ease) both, kenburns 26s ease-in-out 1.4s infinite alternate; }
 .hero-section::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(6, 6, 7, .45) 0%, rgba(6, 6, 7, .25) 30%, rgba(6, 6, 7, .78) 70%, rgba(6, 6, 7, .97) 100%); }
 @keyframes photo-in { from { opacity: 0; transform: scale(1.15); } }
@@ -103,10 +103,6 @@ p { margin: 0 0 1em; }
 .tile b { display: block; font-size: 1.35rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.1; white-space: nowrap; }
 .tile span { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .7); }
 @media (max-width: 640px) { .tiles { grid-template-columns: 1fr 1fr; } .tiles .tile:last-child { grid-column: span 2; } .tile .ti { width: 34px; height: 34px; } }
-.scroll-hint { position: absolute; left: 50%; bottom: 18px; width: 26px; height: 40px; margin-left: -13px; border: 2px solid rgba(255, 255, 255, .45); border-radius: 14px; }
-.scroll-hint::after { content: ""; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: #fff; animation: scroll-dot 1.8s ease-in-out infinite; }
-@keyframes scroll-dot { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(12px); } }
-@media (max-width: 640px) { .scroll-hint { display: none; } }
 
 /* nábeh úvodu */
 .hero-in > * { animation: soft-up .8s var(--ease) both; }
